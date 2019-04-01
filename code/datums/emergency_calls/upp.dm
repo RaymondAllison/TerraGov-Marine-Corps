@@ -20,7 +20,7 @@
 	if(!istype(spawn_loc))
 		return
 
-	var/mob/living/carbon/human/H = new /mob/living/carbon/human(spawn_loc)
+	var/mob/living/carbon/human/species/moth = new /mob/living/carbon/human/species/moth(spawn_loc)
 
 	if(H.gender == MALE)
 		H.name = pick(first_names_male_russian) + " " + pick(last_names_russian)
